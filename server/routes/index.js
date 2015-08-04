@@ -31,7 +31,12 @@ router.get("/", function(req, res) {
     blog.find(function(err, blogs) {
         if(err) throw(err);
 
-        res.render("client/index", { title: "Dimitri Mikadze", blogs: blogs });
+        res.render("client/index", { 
+            title: "Dimitri Mikadze", 
+            blogs: blogs, 
+            desc: "Dimitri Mikadze Personal Blog",
+            url: "/"
+        });
     });
 });
 
@@ -46,7 +51,9 @@ router.get("/blog/:name/:id", function(req, res) {
     blog.findById(id, function(req, blog) {
        res.render("client/blog/blog", {
            title: name.replace("-", " "),
-           blog: blog
+           blog: blog,
+           desc: blog.short_desc,
+           url: "/blog/" + name + "/" + id
        })
     });
 });
