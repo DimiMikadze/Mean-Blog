@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/demos/vanillaSlideshow.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vanilla Javascript CSS3 Fullscreen Responsive Slideshow</title>
+</head>
+<body>
+
+<div id="vanilla-slideshow-container">
+
+    <a href="https://github.com/DimitriMikadze/vanilla-slideshow">
+        <img src="/images/demos/vanilla-slideshow/github.png" alt="github link" id="fork-me">
+    </a>
+
+    <h1>Vanilla Javascript CSS3 Fullscreen Responsive Slideshow</h1>
+    <a href="/download-vanilla-slideshow" id="download">Download</a>
+
+    <div id="vanilla-slideshow">
+
+        <div class="vanilla-slide">
+            <img src="/images/demos/vanilla-slideshow/tiger1.jpg" alt="tiger">
+            <h3>No libraries required</h3>
+        </div>
+
+        <div class="vanilla-slide" >
+            <img src="/images/demos/vanilla-slideshow/tiger2.jpg" alt="tiger">
+            <h3>Very lightweight</h3>
+        </div>
+
+        <div class="vanilla-slide" >
+            <img src="/images/demos/vanilla-slideshow/tiger3.jpg" alt="tiger">
+            <h3>CSS3 Transitions</h3>
+        </div>
+
+        <div class="vanilla-slide" >
+            <img src="/images/demos/vanilla-slideshow/tiger4.jpg" alt="tiger">
+            <h3>Responsive</h3>
+        </div>
+
+    </div>
+
+    <!-- slideshow indicators -->
+    <div id="vanilla-indicators"></div>
+
+    <!-- slideshow arrows -->
+    <div id="vanilla-slideshow-previous">
+        <img src="/images/demos/vanilla-slideshow/arrow-previous.png" alt="slider arrow">
+    </div>
+    <div id="vanilla-slideshow-next">
+        <img src="/images/demos/vanilla-slideshow/arrow-next.png" alt="slider arrow">
+    </div>
+
+</div>
+
+<script src="/js/demos//vanillaSlideshow.min.js"></script>
+<script>
+    vanillaSlideshow.init({
+        slideshow: true,
+        delay: 5000,
+        arrows: true,
+        indicators: true,
+        random: false,
+        animationSpeed: '1s'
+    });
+</script>
+</body>
+</html>

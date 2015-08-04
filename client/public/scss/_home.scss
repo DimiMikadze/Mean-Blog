@@ -1,0 +1,42 @@
+/* Main Container */
+#main-container {
+
+  #mb-container {
+    margin: 200px auto 0 auto;
+    max-width: 960px;
+    color: $white;
+  }
+
+  .mb-container {
+
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px dotted $dark-red;
+    &:last-child {
+      border: none;
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+
+      h2 {
+        font-size: 50px;
+
+      }
+
+      p {
+        font-size: 30px;
+      }
+
+    }
+
+  }
+
+}

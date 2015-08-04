@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+
+.container {
+    margin-bottom: 100px;
+}
+.container h1 {
+    margin-bottom: 50px;
+}
+#logo {
+    font-family: 'Dancing Script', cursive;
+}
+.navbar .logout:hover {
+    text-decoration: underline;
+    color: #337ab7;
+}
+.delete {
+    cursor: pointer;
+}
+.transparent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.cm-container {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 500px;
+    z-index: 10;
+    width: auto;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 20px;
+}
+.cm-buttons {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-top: 1px solid #cecece;
+    padding-top: 20px;
+}
+.cm-buttons button {
+    padding: 10px 30px;
+}
+

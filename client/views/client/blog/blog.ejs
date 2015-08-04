@@ -1,0 +1,21 @@
+<% include ../layouts/header %>
+
+<div id="bb-m-container">
+
+    <div id="blog-header">
+        <h1><%= blog.name %></h1>
+    </div>
+
+    <div id="bb-container">
+
+        <article>
+
+            <%- blog.content %>
+
+        </article>
+
+    </div> <!-- /. blog container -->
+
+</div> <!-- /. main container -->
+
+<% include ../layouts/footer %>

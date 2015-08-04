@@ -1,0 +1,27 @@
+<% include layouts/header %>
+
+<div id="main-container">
+
+    <div id="mb-container">
+
+        <% blogs.forEach(function(blog) { %>
+
+            <div class="mb-container">
+
+                <a href="/blog/<%= blog.short_name.replace(" ", "-");  %>/<%= blog.id %>">
+                    <h2><%= blog.short_name %></h2>
+                </a>
+
+                <a href="/blog/<%= blog.short_name.replace(" ", "-"); %>/<%= blog.id%>">
+                    <p><%= blog.short_desc %></p>
+                </a>
+
+            </div>
+
+        <% }); %>
+
+    </div> <!-- /. end blog container -->
+
+</div> <!-- /. end main container -->
+
+<% include layouts/footer %>

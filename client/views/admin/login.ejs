@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="/bower/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/admin/admin.css"/>
+    <title>Admin Login</title>
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar navbar-default">
+    <a class="navbar-brand pull-left" id="logo">DM</a>
+</nav>
+
+<div class="container">
+
+    <h1>Login</h1>
+
+    <% if(message.length) { %>
+
+        <div class="alert alert-danger">
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
+            <span class="sr-only">Error:</span>
+            <%= message %>
+        </div>
+
+    <% } %>
+
+    <form method="post" action="/login">
+
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" placeholder="Password" class="form-control" />
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="remember"> Remember Me
+            </label>
+        </div>
+
+        <button class="btn btn-primary btn-lg" />Login</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

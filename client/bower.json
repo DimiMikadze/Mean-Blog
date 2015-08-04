@@ -1,0 +1,24 @@
+{
+  "name": "dimitrimikadze",
+  "version": "0.0.0",
+  "authors": [
+    "Dimitri Mikadze"
+  ],
+  "main": "app.js",
+  "license": "MIT",
+  "homepage": "dimitrimikadze.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "textAngular": "~1.4.2",
+    "bootstrap": "~3.3.5",
+    "angular": "1.4.3",
+    "angular-ui-router": "~0.2.15"
+  }
+}

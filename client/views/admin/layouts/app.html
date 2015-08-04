@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="/bower/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/bower/font-awesome/css/font-awesome.min.css"/>
+    <link rel='stylesheet' href='/bower/textAngular/dist/textAngular.css'>
+    <link rel="stylesheet" href="/css/admin/admin.css"/>
+    <title>Admin</title>
+</head>
+<body ng-app="myBlog">
+
+<!-- Header -->
+<nav class="navbar navbar-default">
+    <a class="navbar-brand pull-left" ui-sref="admin-all-blogs" id="logo">DM</a>
+    <a class="navbar-brand pull-right logout" href="/logout">Logout</a>
+</nav>
+
+
+<div ui-view></div>
+
+
+<!-- aplication dependencies -->
+<script src="/bower/angular/angular.min.js"></script>
+<script src="/bower/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src='/bower/textAngular/dist/textAngular-rangy.min.js'></script>
+<script src='/bower/textAngular/dist/textAngular-sanitize.min.js'></script>
+<script src='/bower/textAngular/dist/textAngular.min.js'></script>
+<!-- aplication -->
+<script src="/js/admin/app.js"></script>
+<script src="/js/admin/factories.js"></script>
+<script src="/js/admin/controllers.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    font-family: 'PT Sans', sans-serif;
+    overflow: hidden;
+}
+
+#vanilla-slideshow-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+#vanilla-slideshow .vanilla-slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#vanilla-slideshow-container h1 {
+    color: #ffffff;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    z-index: 5;
+    font-size: 30px;
+    text-shadow: 2px 2px #333333;
+}
+
+#vanilla-slideshow-container a #fork-me {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 5;
+    width: 200px;
+}
+
+#vanilla-slideshow-container #download {
+    color: #333333;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    z-index: 5;
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#vanilla-slideshow #download:hover {
+    font-weight: bold;
+}
+
+#vanilla-slideshow .vanilla-slide h3 {
+    color: #ffffff;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    z-index: 5;
+    font-size: 40px;
+    text-shadow: 2px 2px #333333;
+}
+
+@media screen and (max-width: 600px){
+    #vanilla-slideshow h1, #vanilla-slideshow .vanilla-slide h3 {
+        left: 10px;
+        font-size: 30px;
+    }
+
+    #vanilla-slideshow #download {
+        top: 160px;
+    }
+
+}
+
+#vanilla-slideshow .vanilla-slide.vanilla-active {
+    opacity: 1;
+}
+
+#vanilla-slideshow .vanilla-slide img {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    #vanilla-slideshow .vanilla-slide img {
+        left: 50%;
+        margin-left: -512px;
+    }
+}
+
+/* Arrows */
+
+#vanilla-slideshow-previous {
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    width: 48px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0.7;
+    z-index: 5;
+}
+
+#vanilla-slideshow-next {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    width: 48px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0.7;
+    z-index: 5;
+}
+
+#vanilla-slideshow-left:hover, #vanilla-slideshow-right:hover {
+    opacity: 1;
+}
+
+/* Indicators */
+
+#vanilla-indicators {
+    display: inline-block;
+    z-index: 5;
+    position: absolute;
+    bottom: 50px;
+    text-align: center
+}
+
+.vanilla-indicators {
+    box-shadow: 0 0 10px #333333;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    float: left;
+    margin-right: 3px;
+    cursor: pointer;
+    -webkit-transition: 0.9s;
+    -moz-transition: 0.9s;
+    -ms-transition: 0.9s;
+    -o-transition: 0.9s;
+    transition: 0.9s;
+}
+
+.vanilla-indicators.vanilla-active {
+    background-color: #ffffff;
+}

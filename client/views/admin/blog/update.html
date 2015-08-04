@@ -1,0 +1,20 @@
+<div class="container">
+
+    <h1>Update <span ng-bind="blog.short_name"></span></h1>
+
+    <div class="form-group">
+        <input type="text" name="short_name" placeholder="Short name" class="form-control" ng-model="blog.short_name"/>
+    </div>
+    <div class="form-group">
+        <input type="text" name="name" placeholder="Name" class="form-control" ng-model="blog.name"/>
+    </div>
+    <div class="form-group">
+        <input type="text" name="short_desc" placeholder="Short Description" class="form-control" ng-model="blog.short_desc"/>
+    </div>
+    <div class="form-group">
+        <div text-angular ng-model="blog.content" name="content"></div>
+    </div>
+
+    <button class="btn btn-primary btn-lg" ng-click="updateBlog(blog)"/>Update</button>
+
+</div>

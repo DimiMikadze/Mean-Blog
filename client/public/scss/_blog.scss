@@ -1,0 +1,25 @@
+/* Blog Main Container */
+#bb-m-container {
+
+  #blog-header {
+    width: 100%;
+    text-align: center;
+    color: $white;
+    overflow: hidden;
+    margin: 140px auto 0 auto;
+  }
+
+  #bb-container {
+    margin: 50px auto 0 auto;
+    max-width: 920px;
+    color: $black;
+    background-color: $white;
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+
+  #blog-header {
+    max-width: 920px;
+  }
+
+}
