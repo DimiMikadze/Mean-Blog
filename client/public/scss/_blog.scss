@@ -15,8 +15,18 @@
     color: $black;
     background-color: $white;
     padding: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     overflow: hidden;
+  }
+
+  #comments {
+    margin: 0 auto;
+    max-width: 920px;
+    color: $black;
+    background-color: $white;
+    padding: 20px;
+    margin-bottom: 100px;
+    overflow: hidden;   
   }
 
   #blog-header {
