@@ -90,7 +90,8 @@ footer {
   color: #111111;
   background-color: #ffffff;
   padding: 20px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  overflow: hidden; }
 #bb-m-container #blog-header {
   max-width: 920px; }
 
