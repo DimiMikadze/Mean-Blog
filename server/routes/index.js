@@ -43,7 +43,7 @@ router.get("/", function(req, res) {
 /**
  * Render blog by url param id
  */
-router.get("/blog/:name/:id", function(req, res) {
+router.get("/blog/programming/:name/:id", function(req, res) {
 
     var name = req.params.name;
     var id = req.params.id;
