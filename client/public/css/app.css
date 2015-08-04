@@ -1,6 +1,6 @@
 /* Main SCSS */
 /* Main Color Variables */
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script);
 body, html {
   margin: 0;
@@ -10,8 +10,11 @@ body {
   width: 100%;
   height: 100%;
   background-color: #e63d3d;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   background-image: url("../images/skulls-light.png"); }
+
+.dancing {
+  font-family: 'Dancing Script', cursive; }
 
 /* Header */
 header {
@@ -27,10 +30,28 @@ header {
     font-size: 30px;
     margin-top: 30px;
     margin-left: 20px;
-    font-family: 'Dancing Script', cursive;
     color: #ffffff;
     text-align: center;
     color: #111111; }
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 20px; }
+  footer p:first-child {
+    font-size: 30px; }
+  footer p {
+    color: #ffffff; }
+  footer .social-icons {
+    margin-top: 15px; }
+    footer .social-icons a {
+      margin: 0 3px;
+      font-size: 28px;
+      text-decoration: none;
+      color: #cccccc; }
+      footer .social-icons a:hover {
+        color: #ffffff; }
 
 /* Main Container */
 #main-container #mb-container {

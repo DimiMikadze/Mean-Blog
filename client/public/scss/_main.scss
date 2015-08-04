@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script);
 
 body, html {
@@ -10,8 +10,12 @@ body {
   width: 100%;
   height: 100%;
   background-color: $red;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   background-image: url('../images/skulls-light.png');
+}
+
+.dancing {
+  font-family: 'Dancing Script', cursive;
 }
 
 /* Header */
@@ -29,9 +33,41 @@ header {
     font-size: 30px;
     margin-top: 30px;
     margin-left: 20px;
-    font-family: 'Dancing Script', cursive;
     color: $white;
     text-align: center;
     color: $black;
+  }
+}
+
+/* Footer */
+footer {
+
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 20px;
+
+  p:first-child {
+    font-size: 30px;
+  }
+
+  p {
+    color: $white;
+  }
+
+  .social-icons {
+
+    margin-top: 15px;
+
+     a {
+      margin: 0 3px;
+      font-size: 28px;
+      text-decoration: none;
+      color: $light-gray;
+
+      &:hover {
+        color: $white;
+      }
+
+     }
   }
 }
