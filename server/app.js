@@ -22,6 +22,7 @@ app.set("views", __dirname + "/../client/views");
 
 // use
 app.use(express.static("../client/public"));
+app.use(express.static("../client/app"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(morgan("dev"));
