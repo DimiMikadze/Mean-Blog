@@ -28,12 +28,12 @@ router.get("/logout", function(req, res) {
  * Render Main Page
  */
 router.get("/", function(req, res) {
-    blog.find(function(err, blogs) {
+    blog.find({}).sort({created_at: 'desc'}).exec(function(err, blogs) {
         if(err) throw(err);
 
-        res.render("client/index", { 
-            title: "Dimitri Mikadze", 
-            blogs: blogs, 
+        res.render("client/index", {
+            title: "Dimitri Mikadze",
+            blogs: blogs,
             desc: "Dimitri Mikadze Personal Blog",
             url: "/"
         });
@@ -58,9 +58,9 @@ router.get("/blog/programming/:name/:id", function(req, res) {
     });
 });
 
-// ===========================================
-//                  Demos
-// ===========================================
+// ========================================================
+//                          Demos
+// ========================================================
 
 router.get("/demos/vanilla-slideshow", function(req, res) {
     res.render("demos/vanilla-slideshow.html");
