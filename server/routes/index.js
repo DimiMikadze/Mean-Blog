@@ -58,6 +58,14 @@ router.get("/blog/programming/:name/:id", function(req, res) {
     });
 });
 
+/**
+* Render Sitemap.xml
+*/
+router.get("/sitemap.xml", function(req, res) {
+  res.setHeader('content-type', 'application/xml');
+  res.render("sitemap");
+});
+
 // ========================================================
 //                          Demos
 // ========================================================
