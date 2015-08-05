@@ -40,7 +40,7 @@ http://dimitrimikadze.com/
 "angular-ui-router": "~0.2.15"
 ````
 
-## Geting Started
+## Getting Started
 
 Clone Repo
 
