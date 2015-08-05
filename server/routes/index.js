@@ -28,7 +28,7 @@ router.get("/logout", function(req, res) {
  * Render Main Page
  */
 router.get("/", function(req, res) {
-    blog.find({}).sort({created_at: 'desc'}).exec(function(err, blogs) {
+    blog.find({}).sort({ created_at: -1 }).exec(function(err, blogs) {
         if(err) throw(err);
 
         res.render("client/index", {
