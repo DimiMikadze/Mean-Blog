@@ -4,8 +4,8 @@ var User            = require("../models/user");
 
 router.get("/create-user/:name/:password", function(req, res) {
 	user = new User({
-		name: 'Dimitri',
-		password: 'Mikadze123Dimitri',
+		name: req.params.name,
+		password: req.params.password,
 		admin: true
 	});
 
@@ -13,6 +13,14 @@ router.get("/create-user/:name/:password", function(req, res) {
 		if(err) throw(err);
 
 		res.send("User Created");
+	});
+});
+
+router.get("/delete-test-user", function(req, reqs) {
+	User.remove({}, function(err) {
+		if(err) throw(err);
+
+		res.send("User Deleted");
 	});
 });
 
