@@ -99,7 +99,7 @@ app.post('/login', passport.authenticate('local', {
  */
 app.use("/", require("./routes"));
 app.use("/admin", require("./routes/admin"));
-app.use("/test", require("./routes/testUser"));
+// app.use("/test", require("./routes/testUser"));
 
 var port = process.env.PORT || 3000;
 var server = app.listen(port, function() {
