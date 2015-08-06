@@ -16,12 +16,4 @@ router.get("/create-user/:name/:password", function(req, res) {
 	});
 });
 
-router.get("/delete-test-user", function(req, res) {
-	User.remove({}, function(err) {
-		if(err) throw(err);
-
-		res.send("User Deleted");
-	});
-});
-
 module.exports = router;
