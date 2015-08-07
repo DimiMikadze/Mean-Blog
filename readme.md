@@ -101,7 +101,7 @@ Navigate to
 
 Insert your newly created name and password
 
-## Change Styles in Admin
+## Change Styles
 
 Css is written with Sass, you can update scss files with running
 
