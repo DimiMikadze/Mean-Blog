@@ -50,10 +50,10 @@ router.get("/blog/programming/:name/:id", function(req, res) {
 
     blog.findById(id, function(req, blog) {
        res.render("client/blog/blog", {
-           title: name.replace("-", " "),
+           title: name,
            blog: blog,
            desc: blog.short_desc,
-           url: "/blog/" + name + "/" + id
+           url: "/blog/programming/" + name + "/" + id
        })
     });
 });
