@@ -13,7 +13,7 @@
 
 <% blogs.forEach(function(blog) { %>
     <url>
-        <loc>http://dimitrimikadze.com/blog/programming/<%=blog.short_name.replace(" ", "-")%>/<%=blog._id%></loc>
+        <loc>http://dimitrimikadze.com/blog/programming/<%= blog.short_name.replace(new RegExp(" ", "g"), "-") %>/<%=blog._id%></loc>
     </url>
 <% }); %>
 

@@ -8,11 +8,11 @@
 
             <div class="mb-container">
 
-                <a href="/blog/programming/<%= blog.short_name.replace(" ", "-");  %>/<%= blog.id %>">
+                <a href="/blog/programming/<%= blog.short_name.replace(new RegExp(" ", "g"), "-") %>/<%= blog.id %>">
                     <h2><%= blog.short_name %></h2>
                 </a>
 
-                <a href="/blog/programming/<%= blog.short_name.replace(" ", "-"); %>/<%= blog.id%>">
+                <a href="/blog/programming/<%= blog.short_name.replace(new RegExp(" ", "g"), "-") %>/<%= blog.id%>">
                     <p><%= blog.short_desc %></p>
                 </a>
 
