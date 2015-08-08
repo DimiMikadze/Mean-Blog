@@ -8,18 +8,13 @@
   <loc>http://dimitrimikadze.com/</loc>
 </url>
 <url>
-  <loc>http://dimitrimikadze.com/blog/programming/PHP-Helpers/55c51d86bf765bc95fa85d69</loc>
+    <loc>http://dimitrimikadze.com/demos/vanilla-slideshow</loc>
 </url>
-<url>
-  <loc>http://dimitrimikadze.com/blog/programming/Mean-Blog/55c22681abb9276933a32253</loc>
-</url>
-<url>
-  <loc>http://dimitrimikadze.com/blog/programming/Vanilla-Helpers/55c10633086dd7752f0202de</loc>
-</url>
-<url>
-  <loc>http://dimitrimikadze.com/blog/programming/Vanilla-Slideshow/55c1061a086dd7752f0202dd</loc>
-</url>
-<url>
-  <loc>http://dimitrimikadze.com/demos/vanilla-slideshow</loc>
-</url>
+
+<% blogs.forEach(function(blog) { %>
+    <url>
+        <loc>http://dimitrimikadze.com/blog/programming/<%=blog.short_name.replace(" ", "-")%>/<%=blog._id%></loc>
+    </url>
+<% }); %>
+
 </urlset>

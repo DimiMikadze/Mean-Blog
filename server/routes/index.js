@@ -62,8 +62,15 @@ router.get("/blog/programming/:name/:id", function(req, res) {
 * Render Sitemap.xml
 */
 router.get("/sitemap.xml", function(req, res) {
-  res.setHeader('content-type', 'application/xml');
-  res.render("sitemap");
+    blog.find({}).sort({ created_at: -1 }).exec(function(err, blogs) {
+
+        if(err) throw(err);
+
+        res.setHeader('content-type', 'application/xml');
+        res.render("sitemap", {
+            blogs: blogs
+        });
+    });
 });
 
 // ========================================================
