@@ -40,7 +40,7 @@ http://dimitrimikadze.com/
 "angular-ui-router": "~0.2.15"
 ````
 
-## Geting Started
+## Getting Started
 
 Clone Repo
 
@@ -101,7 +101,7 @@ Navigate to
 
 Insert your newly created name and password
 
-## Change Styles in Admin
+## Change Styles
 
 Css is written with Sass, you can update scss files with running
 
