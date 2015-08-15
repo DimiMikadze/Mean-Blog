@@ -124,6 +124,8 @@ grunt-contrib-watch
 
 ## Start Grunt
 
+Grant will concatenate admin script and css files and watch for changes
+
 ````
 cd client
 grunt
@@ -132,8 +134,11 @@ grunt
 output will look like this
 
 ````
-Running "concat:dist" (concat) task
+Running "concat:js" (concat) task
 File app/scripts.js created.
+
+Running "concat:css" (concat) task
+File public/css/admin/bundle.css created.
 
 Running "watch" task
 Waiting...
