@@ -94,12 +94,23 @@ app.post('/login', passport.authenticate('local', {
     res.redirect("/admin#/blogs");
 });
 
-/**
- * Routes
- */
+
+// =================================================
+//                      Routes
+// =================================================
+
+// Route handler for www requests
+app.get('/*', function(req, res, next) {
+    if (req.headers.host.match(/^www/) !== null ) {
+        res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
+    } else {
+        next();     
+    }
+});
+
 app.use("/", require("./routes"));
 app.use("/admin", require("./routes/admin"));
-// app.use("/test", require("./routes/testUser"));
+//app.use("/test", require("./routes/testUser"));
 
 var port = process.env.PORT || 3000;
 var server = app.listen(port, function() {

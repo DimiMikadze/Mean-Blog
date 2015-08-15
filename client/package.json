@@ -1,0 +1,29 @@
+{
+  "name": "DimitriMikadze",
+  "version": "1.0.0",
+  "description": "Dimitri Mikadze Personal Web Site",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DimitriMikadze/mean-blog.git"
+  },
+  "author": "Dimitri Mikadze",
+  "license": "Mit",
+  "bugs": {
+    "url": "https://github.com/DimitriMikadze/mean-blog/issues"
+  },
+  "homepage": "http://dimitrimikadze.com"
+}

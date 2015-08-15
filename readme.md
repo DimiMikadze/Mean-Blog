@@ -115,6 +115,28 @@ or if you don't want to use Sass just update
 client/public/css/app.css
 ````
 
+## Grunt Packages
+
+grunt-contrib-concat
+grunt-contrib-watch
+
+## Start Grunt
+
+````
+cd client
+grunt
+````
+
+output will look like this
+
+````
+Running "concat:dist" (concat) task
+File app/scripts.js created.
+
+Running "watch" task
+Waiting...
+````
+
 ## Contributing
 
 contributions are more than welcome!
