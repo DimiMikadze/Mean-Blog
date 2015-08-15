@@ -18,7 +18,6 @@ module.exports = function(grunt) {
             css: {
                 src: [
                     'public/bower/bootstrap/dist/css/bootstrap.min.css',
-                    'public/bower/font-awesome/css/font-awesome.min.css',
                     'public/bower/textAngular/dist/textAngular.css',
                     'public/css/admin/admin.css'
                 ],
@@ -28,6 +27,10 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: ['app/**/*.js'],
+                tasks: ['concat']
+            },
+            css: {
+                files: ['public/css/admin/**/*.css'],
                 tasks: ['concat']
             }
         }
