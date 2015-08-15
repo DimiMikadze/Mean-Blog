@@ -12,6 +12,7 @@ router.get("/login", function authenticatedOrNot(req, res, next) {
     } else {
         next();
     }}, function(req, res) {
+
     res.render("admin/login", { message: req.flash('error') });
 });
 
@@ -50,7 +51,7 @@ router.get("/blog/programming/:name/:id", function(req, res) {
 
     blog.findById(id, function(req, blog) {
        res.render("client/blog/blog", {
-           title: name,
+           title: name.split('-').join(' '),
            blog: blog,
            desc: blog.short_desc,
            url: "/blog/programming/" + name + "/" + id
