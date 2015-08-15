@@ -117,8 +117,10 @@ client/public/css/app.css
 
 ## Grunt Packages
 
+````
 grunt-contrib-concat
 grunt-contrib-watch
+````
 
 ## Start Grunt
 
