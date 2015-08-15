@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         concat: {
-            dist: {
+            js: {
                 src: [
                     'public/bower/angular/angular.min.js',
                     'public/bower/angular-ui-router/release/angular-ui-router.min.js',
@@ -14,6 +14,15 @@ module.exports = function(grunt) {
                     'app/controllers.js'
                 ],
                 dest: 'app/scripts.js'
+            },
+            css: {
+                src: [
+                    'public/bower/bootstrap/dist/css/bootstrap.min.css',
+                    'public/bower/font-awesome/css/font-awesome.min.css',
+                    'public/bower/textAngular/dist/textAngular.css',
+                    'public/css/admin/admin.css'
+                ],
+                dest: 'public/css/admin/bundle.css'
             }
         },
         watch: {
