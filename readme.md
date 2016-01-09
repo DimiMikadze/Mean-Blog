@@ -11,10 +11,6 @@ Blog using Nodejs, Expressjs, Angularjs and Mongodb. MEAN Javascript Fullstack a
 - textAngular Text-Editor
 - Sass
 
-## Demo
-
-http://dimitrimikadze.com/
-
 ## Server Side Dependencies
 
 ````
